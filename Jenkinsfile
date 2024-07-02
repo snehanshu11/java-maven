@@ -8,9 +8,9 @@ pipeline {
     stages {
         stage("checkout") {
             steps {
-                sh 'git clone -b "${params.branch}" https://github.com/snehanshu11/java-maven.git'
+                sh "git clone -b ${params.branch} https://github.com/snehanshu11/java-maven.git"
                 dir('java-maven') {
-                    sh 'git checkout "${params.branch}"'
+                    sh "git checkout ${params.branch}"
                 }
             }
         }
