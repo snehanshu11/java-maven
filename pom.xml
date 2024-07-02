@@ -5,7 +5,7 @@
 
   <groupId>com.jfrog</groupId>
   <artifactId>my-jfrog-app</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2-SNAPSHOT</version>
 
   <name>my-jfrog-app</name>
   <!-- FIXME change it to the project's website -->
@@ -34,7 +34,7 @@
   <connection>scm:git:https://github.com/snehanshu11/java-maven.git</connection>
   <developerConnection>scm:git:https://github.com/snehanshu11/java-maven.git</developerConnection>
   <url>https://github.com/snehanshu11/java-maven</url>
-  <tag>my-jfrog-app-1.0.1</tag>
+  <tag>HEAD</tag>
   </scm>
 
 
