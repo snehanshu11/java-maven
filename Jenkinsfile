@@ -18,7 +18,7 @@ pipeline {
         stage("build - Main Branch") {
             when {
                 expression {
-                    params.branch == "main"
+                    !params.branch.startsWith("release")
                 }
             }
             steps {
