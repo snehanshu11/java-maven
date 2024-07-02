@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage("checkout") {
+        stage("Code Checkout") {
             steps {
                 sh "git clone -b ${params.branch} https://github.com/snehanshu11/java-maven.git"
                 dir('java-maven') {
@@ -15,10 +15,10 @@ pipeline {
             }
         }
         
-        stage("build ${params.branch}") {
+        stage("Code Build") {
             when {
                 expression {
-                    !params.branch.startsWith("release")
+                    params.branch == "main" || params.branch == "main"
                 }
             }
             steps {
