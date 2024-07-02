@@ -31,6 +31,13 @@
     </repository>
   </distributionManagement>
 
+  <scm>
+    <connection>scm:git:git://github.com:snehanshu11/java-maven.git</connection> <!-- Example for Git -->
+    <developerConnection>scm:git:ssh://github.com:snehanshu11/java-maven.git</developerConnection> <!-- Example for Git -->
+    <url>https://github.com/snehanshu11/java-maven</url> <!-- Example URL to the project's web interface -->
+  </scm>
+
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
