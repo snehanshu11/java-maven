@@ -23,7 +23,7 @@ pipeline {
             }
             steps {
                 dir('java-maven') {
-                    sh 'mvn clean install'
+                    sh '/Users/snehanshu.suman/Downloads/apache-maven-3.8.6/bin/mvn clean install'
                 }
             }
         }
